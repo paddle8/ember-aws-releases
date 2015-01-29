@@ -1,11 +1,11 @@
 <form id="configure">
-  {{#progress-header active=isConfiguring}}
+  {{#form-header active=isConfiguring}}
     {{#if isConfiguring}}
       Configuring..
     {{else}}
       Configure
     {{/if}}
-  {{/progress-header}}
+  {{/form-header}}
   {{#unless isConfiguring}}
     {{labelled-input title="Environment Name" name="release[env]" value=environment}}
     {{labelled-input title="S3 Bucket" name="release[s3_bucket]" value=bucket}}

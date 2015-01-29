@@ -1,11 +1,11 @@
 <form id="sign-in">
-  {{#progress-header active=isSigningIn}}
+  {{#form-header active=isSigningIn}}
     {{#if isSigningIn}}
       Signing in...
     {{else}}
       Sign in
     {{/if}}
-  {{/progress-header}}
+  {{/form-header}}
   {{#unless isSigningIn}}
     {{labelled-input title="Account" name="aws[account]" value=account}}
     {{labelled-input title="User Name" name="aws[user_name]" value=userName}}
