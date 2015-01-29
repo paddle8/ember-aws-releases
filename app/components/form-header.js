@@ -1,6 +1,7 @@
 import Ember from "ember";
 
 export default Ember.Component.extend({
-  classNames: ['progress-header'],
+  tagName: 'header',
+  classNames: ['form-header'],
   classNameBindings: ['active:active']
 });

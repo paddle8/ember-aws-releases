@@ -52,7 +52,7 @@
   }
 }
 
-.progress-header {
+.form-header {
   &:before {
     content: ' ';
     width: 50px;
@@ -76,7 +76,7 @@
 }
 
 @media (max-width: 400px) {
-  .progress-header {
+  .form-header {
     padding-left: 20px;
   }
 }

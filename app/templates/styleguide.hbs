@@ -2,14 +2,20 @@
   <h1>Styleguide</h1>
 
   <section>
-    <h3>Progress Header</h3>
-    {{#progress-header}}Add you app{{/progress-header}}
-    {{#progress-header active=true}}Adding you app...{{/progress-header}}
+    <h3>Form Header</h3>
+    {{#form-header}}Add your app{{/form-header}}
+    {{#form-header active=true}}Adding your app...{{/form-header}}
   </section>
 
   <section>
     <h3>Labelled Input</h3>
     {{labelled-input title="Application Name" name='application[name]' value=name}}
     {{labelled-input title="Application Name" name='application[name]' value=name error="Application Name is required"}}
+  </section>
+
+  <section>
+    <h3>Checkbox</h3>
+    {{#check-box}}I am unchecked{{/check-box}}
+    {{#check-box checked=true}}I am checked{{/check-box}}
   </section>
 </div>
