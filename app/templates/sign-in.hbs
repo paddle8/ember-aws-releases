@@ -14,5 +14,6 @@
     {{#if hasMFA}}
       {{labelled-input title="MFA Token" name="aws[mfa_token]" value=mfaToken}}
     {{/if}}
+    <button {{action "signIn"}}>Sign In</button>
   {{/unless}}
 </form>
