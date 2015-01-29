@@ -1,7 +1,6 @@
-# Ember-releases
+# ember-aws-releases
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a WIP release management application for frontend applications deployed using the AWS ecosystem.
 
 ## Prerequisites
 
