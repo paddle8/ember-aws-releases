@@ -1,0 +1,12 @@
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 15vh;
+  transition: padding-top .5s;
+}
+
+@media (max-height: 568px) {
+  form {
+    padding-top: 5px;
+  }
+}

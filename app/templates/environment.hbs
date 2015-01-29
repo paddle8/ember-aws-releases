@@ -1,0 +1,11 @@
+<div id="release">
+  <ul>
+    {{#each releases as |release|}}
+      <li class="{{if release.active "active"}}">
+        Version {{release.version}}
+        Activated on {{release.activatedAt}}
+        Created by {{release.createdBy}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

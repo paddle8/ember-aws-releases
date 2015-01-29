@@ -1,0 +1,18 @@
+<form id="sign-in">
+  {{#progress-header active=isSigningIn}}
+    {{#if isSigningIn}}
+      Signing in...
+    {{else}}
+      Sign in
+    {{/if}}
+  {{/progress-header}}
+  {{#unless isSigningIn}}
+    {{labelled-input title="Account" name="aws[account]" value=account}}
+    {{labelled-input title="User Name" name="aws[user_name]" value=userName}}
+    {{labelled-input type="password" title="Password" name="aws[password]" value=password}}
+    {{#check-box checked=hasMFA}}I have a MFA Token{{/check-box}}
+    {{#if hasMFA}}
+      {{labelled-input title="MFA Token" name="aws[mfa_token]" value=mfaToken}}
+    {{/if}}
+  {{/unless}}
+</form>

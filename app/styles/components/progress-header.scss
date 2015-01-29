@@ -1,0 +1,82 @@
+@-webkit-keyframes tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(100deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@-moz-keyframes tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(100deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes tick {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(100deg);
+  }
+  90% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+.progress-header {
+  &:before {
+    content: ' ';
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #FFA237;
+    margin-right: 15px;
+    position: relative;
+    top: 15px;
+  }
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  transition: padding .5s;
+
+  &.active:before {
+    -webkit-animation: tick linear 0.7s infinite;
+       -moz-animation: tick linear 0.7s infinite;
+            animation: tick linear 0.7s infinite;
+  }
+}
+
+@media (max-width: 400px) {
+  .progress-header {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+#styleguide {
+  width: 400px;
+  margin: 0 auto;
+
+  h1 {
+    text-transform: lowercase;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #333;
+  }
+
+  h3 {
+    text-transform: lowercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+  }
+
+  section {
+    margin-bottom: 50px;
+  }
+}

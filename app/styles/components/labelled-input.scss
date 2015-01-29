@@ -1,0 +1,52 @@
+.labelled-input {
+  margin-bottom: 10px;
+
+  input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    display: block;
+    border: 0;
+    transition: border .25s;
+    border-bottom: 2px solid #CCC;
+    padding: 5px;
+    font-size: 20px;
+    transition: all .5s;
+    width: calc(100% - 10px);
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid #FFA237;
+    }
+  }
+
+  label {
+    transition: padding .5s;
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  &.invalid {
+    input {
+      border-bottom: 2px solid #FFA237;
+    }
+
+    label {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .labelled-input {
+    input {
+      padding: 5px 20px;
+      width: calc(100% - 40px);
+    }
+    label {
+      padding-left: 20px;
+    }
+  }
+}

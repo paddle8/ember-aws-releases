@@ -1,0 +1,11 @@
+<div id="app-index">
+  <ul>
+    {{#each environments as |environment|}}
+      <li>
+        {{#link-to "environment" environment}}
+          Environment {{environment.id}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</div>

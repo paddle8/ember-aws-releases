@@ -1,0 +1,15 @@
+<div id="styleguide">
+  <h1>Styleguide</h1>
+
+  <section>
+    <h3>Progress Header</h3>
+    {{#progress-header}}Add you app{{/progress-header}}
+    {{#progress-header active=true}}Adding you app...{{/progress-header}}
+  </section>
+
+  <section>
+    <h3>Labelled Input</h3>
+    {{labelled-input title="Application Name" name='application[name]' value=name}}
+    {{labelled-input title="Application Name" name='application[name]' value=name error="Application Name is required"}}
+  </section>
+</div>
